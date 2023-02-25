@@ -1,0 +1,38 @@
+body {
+    background-color: #f9f8f4;
+}
+
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+a:hover {
+    color:blue;
+}
+.navbar .logo img{
+    width: 30px;
+    height: 30px;
+    margin-top: 2%;
+    padding-left: 5%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .pages {
+    float: right;
+    margin-top: 2%;
+    margin-left: auto;
+    padding-left: 0;
+  }
+  .navbar .pages li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 5px;
+  }
+  .navbar .pages li:first-child {
+    margin-left: 0;
+  }
