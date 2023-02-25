@@ -1,38 +1,58 @@
 body {
     background-color: #f9f8f4;
 }
-
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-}
-a:hover {
-    color:blue;
-}
-.navbar .logo img{
+.home {
     width: 30px;
     height: 30px;
-    margin-top: 2%;
-    padding-left: 5%;
-    font-size: 1.5rem;
-    font-weight: bold;
 }
-.navbar .pages {
-    float: right;
-    margin-top: 2%;
-    margin-left: auto;
-    padding-left: 0;
-  }
-  .navbar .pages li {
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 3px;
-    padding: 5px;
-  }
-  .navbar .pages li:first-child {
-    margin-left: 0;
-  }
+#main-navbar{
+    background-color: #f9f8f4;
+    overflow: hidden;
+}
+
+#navbar-container{
+    display: flex;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.img {
+    width: 100px;
+}
+  
+#main-navbar ul{
+    list-style-type: none;
+    margin: 0.5em;
+    padding: 0.5em;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#main-navbar ul li{
+    position: relative;
+    display: block; 
+    padding: 0;
+}
+#main-navbar ul li.img {
+    margin-right: auto; 
+}
+#navbar-container .right {
+    display: flex;
+    justify-content: flex-end;
+}
+#navbar-container .right li {
+    margin-left: 2em; 
+}
+#main-navbar ul li a{
+    display: block;
+    padding: 2em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 100;
+}
+#main-navbar ul li a:hover{
+    transform: scale(2);
+    transition: all 0.5s;
+}
+  
