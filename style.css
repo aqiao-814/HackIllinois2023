@@ -66,17 +66,16 @@ body {
 
 .about{
     width: 100%;
-    padding: 20px 0px;
-    
 }
 
 .about-us{
-    width: 1000px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .main-top{
-    width: 1130px;
-    max-width: 95%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: center;
