@@ -1,12 +1,12 @@
 body {
-    background-color: #f9f8f4;
+    background-color: #e7e7e7;
 }
 .home {
     width: 30px;
     height: 30px;
 }
 #main-navbar{
-    background-color: #f9f8f4;
+    background-color: #e7e7e7;
     overflow: hidden;
 }
 
@@ -30,6 +30,7 @@ body {
     width: 100%;
 }
 #main-navbar ul li{
+    font-size: 19px;
     position: relative;
     display: block; 
     padding: 0;
@@ -52,8 +53,10 @@ body {
     font-weight: 100;
 }
 #main-navbar ul li a:hover {
-    transform: scale(2);
+    color: grey;
+    transform: scale(1.2);
     transition: all 0.5s;
+
 }
 #onpage {
     text-decoration: underline;

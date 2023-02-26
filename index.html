@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--css-->
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <!--d3-->
-  <script src="https://d3js.org/d3.v7.js"></script>
-  <!--js-->
-  <script src="script.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <!--d3-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <!--js-->
+    <script src="script.js"></script>
+    <!--fonts-->
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+</head> 
 <body>
 <nav id="main-navbar">
     <div id="navbar-container">
@@ -26,19 +29,19 @@
 </nav>
 
 <!--graph-->
-<meta charset="utf-8">
-<script src="https://d3js.org/d3.v4.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
 <div id="word_cloud"></div>
 <script>
-  var myWords = [{word: "#covid-19", size: "60"}, {word: "#quarantine", size: "55"}, {word: "#corona", size: "50"}, {word: "#stayhome", size: "50"}, 
+    var myWords = [{word: "#covid-19", size: "60"}, {word: "#quarantine", size: "55"}, {word: "#corona", size: "50"}, {word: "#stayhome", size: "50"}, 
   {word: "#lockdown", size: "40"}, {word: "#pandemic", size: "45"}, {word: "#socialdistancing", size: "40"}, {word: "#vaccine", size: "35"}, 
   {word: "#coronavirusnews", size: "30"}, {word: "#covidsymptoms", size: "30"}, {word: "#mentalhealth", size: "40"}, {word: "#covidtesting", size: "30"}, 
   {word: "#covidfacts", size: "25"}, {word: "#vaccinemyths", size: "20"}, {word: "#masks", size: "20"}]
 
+  var w = window.innerWidth;
+  var h = window.innerHeight / 2;
+
   var margin = {top: 10, right: 10, bottom: 10, left: 10},   // set the dimensions and margins of the graph
-      width = 450 - margin.left - margin.right,
-      height = 450 - margin.top - margin.bottom;
+      width = w - margin.left - margin.right,
+      height = h - margin.top - margin.bottom;
   
   // append the svg object to the body of the page
   var svg = d3.select("#word_cloud").append("svg")
@@ -73,7 +76,7 @@
           })
           .text(function(d) { return d.text; });
   }
-  </script>
+</script>
 <!--graph end-->
 </body>
 </html>
