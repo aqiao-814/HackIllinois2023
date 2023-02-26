@@ -53,7 +53,7 @@ body {
     font-weight: 100;
 }
 #main-navbar ul li a:hover {
-    color: aqua;
+    color: grey;
     transform: scale(1.2);
     transition: all 0.5s;
 
@@ -63,7 +63,3 @@ body {
 }
 
   
-#word_cloud {
-    color: blue;
-    position: relative;
-}
