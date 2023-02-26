@@ -1,0 +1,61 @@
+State/Territory,Total Cases,Confirmed Cases,Probable Cases,Cases in Last 7 Days,Case Rate per 100000,Total Deaths,Confirmed Deaths,Probable Deaths,Death Rate per 100000,State Region
+Alaska,5798,null,null,535,786,42,null,null,5,West
+Alabama,133604,121879,11725,7546,2733,2267,2153,114,46,South
+Arkansas,66280,null,null,5056,2199,908,null,null,30,South
+American Samoa,0,null,null,0,0,0,null,null,0,Other
+Arizona,205964,204157,1807,4129,2872,5219,4945,274,72,West
+California,735235,null,null,31150,1859,13726,null,null,34,West
+Colorado,59487,55458,4029,2063,1044,1973,1623,350,34,West
+Connecticut,53365,51221,2144,486,1494,4468,3583,885,125,Northeast
+District of Columbia,14315,null,null,323,2038,611,null,null,86,South
+Delaware,18308,17317,991,773,1893,609,537,72,62,South
+Florida,640978,null,null,24349,3009,11871,null,null,55,South
+Federated States of Micronesia,0,0,0,0,0,0,null,null,0,Other
+Georgia,283807,null,null,13336,2698,6044,null,null,57,South
+Guam,1619,null,null,172,977,14,null,null,8,Other
+Hawaii,9224,null,null,1389,649,86,null,null,6,West
+Iowa,70403,null,null,5580,2231,1168,null,null,37,Midwest
+Idaho,33741,31245,2496,1653,1923,385,349,36,21,West
+Illinois,252889,250961,1928,16164,1985,8398,8179,219,65,Midwest
+Indiana,100394,null,null,6198,1500,3368,3144,224,50,Midwest
+Kansas,46914,45352,1562,4302,1611,485,null,null,16,Midwest
+Kentucky,53064,47956,5108,4668,1188,996,987,9,22,South
+Louisiana,154073,null,null,5179,3306,5105,4942,163,109,South
+Massachusetts,130942,121046,9896,2740,1897,9133,8925,208,132,Northeast
+Maryland,113239,null,null,4376,1874,3807,3663,144,63,South
+Maine,4713,4244,469,165,352,134,null,null,10,Northeast
+Michigan,118403,107371,11032,5378,1186,6810,6538,272,68,Midwest
+Minnesota,81608,null,null,5744,1454,1914,1862,52,34,Midwest
+Missouri,94340,null,null,9643,1540,1659,null,null,27,Midwest
+Northern Mariana Islands,59,59,0,3,0,2,2,0,3,Other
+Mississippi,87379,82684,4695,3795,2926,2585,2417,168,86,South
+Montana,8379,8379,0,886,789,118,118,0,11,West
+North Carolina,177919,null,null,10606,1714,2897,null,null,27,South
+North Dakota,13872,null,null,1872,1825,156,null,null,20,Midwest
+Nebraska,35975,null,null,1688,1865,404,null,null,20,Midwest
+New Hampshire,7476,null,null,201,551,433,null,null,31,Northeast
+New Jersey,194390,null,null,2430,2182,15991,14208,1783,179,Northeast
+New Mexico,26144,null,null,792,1248,807,null,null,38,West
+Nevada,72218,null,null,2734,2380,1426,null,null,46,West
+New York,203809,null,null,3290,1829,8970,null,null,80,Northeast
+New York City,236868,232036,4832,1604,2820,23744,19098,4646,282,Northeast
+Ohio,130558,123803,6755,7401,1117,4259,3972,287,36,Midwest
+Oklahoma,70351,64220,6131,6243,1784,853,853,0,21,South
+Oregon,28190,26883,1307,1477,673,482,470,12,11,West
+Pennsylvania,139863,135862,4001,5838,1092,7780,null,null,60,Northeast
+Puerto Rico,35504,16788,18716,2083,1111,482,319,163,15,Other
+Palau,0,null,null,0,0,0,null,null,0,Other
+Rhode Island,22243,null,null,294,2104,1055,null,null,99,Northeast
+Republic of Marshall Islands,0,0,0,0,0,0,null,null,0,Other
+South Carolina,125607,123552,2055,6615,2471,2907,2767,140,57,South
+South Dakota,15300,null,null,1791,1734,173,171,2,19,Midwest
+Tennessee,165109,160708,4401,10176,2439,1869,1818,51,27,South
+Texas,640370,null,null,27401,2231,13492,null,null,47,South
+Utah,55743,55273,470,2951,1763,423,423,0,13,West
+Virginia,128407,122711,5696,6792,1508,2686,2553,133,31,South
+Virgin Islands,1191,null,null,52,1138,18,null,null,17,Other
+Vermont,1651,null,null,26,264,58,null,null,9,Northeast
+Washington,77545,null,null,2910,1029,1953,null,null,25,West
+Wisconsin,86928,81760,5168,6360,1495,1176,1168,8,20,Midwest
+West Virginia,11575,11368,207,1325,641,247,null,null,13,South
+Wyoming,4032,3425,607,190,698,42,42,0,7,West
