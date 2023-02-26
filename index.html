@@ -26,7 +26,54 @@
 </nav>
 
 <!--graph-->
+<meta charset="utf-8">
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+<div id="word_cloud"></div>
+<script>
+  var myWords = [{word: "#covid-19", size: "60"}, {word: "#quarantine", size: "55"}, {word: "#corona", size: "50"}, {word: "#stayhome", size: "50"}, 
+  {word: "#lockdown", size: "40"}, {word: "#pandemic", size: "45"}, {word: "#socialdistancing", size: "40"}, {word: "#vaccine", size: "35"}, 
+  {word: "#coronavirusnews", size: "30"}, {word: "#covidsymptoms", size: "30"}, {word: "#mentalhealth", size: "40"}, {word: "#covidtesting", size: "30"}, 
+  {word: "#covidfacts", size: "25"}, {word: "#vaccinemyths", size: "20"}, {word: "#masks", size: "20"}]
 
+  var margin = {top: 10, right: 10, bottom: 10, left: 10},   // set the dimensions and margins of the graph
+      width = 450 - margin.left - margin.right,
+      height = 450 - margin.top - margin.bottom;
+  
+  // append the svg object to the body of the page
+  var svg = d3.select("#word_cloud").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+  
+  // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
+  var layout = d3.layout.cloud()
+    .size([width, height])
+    .words(myWords.map(function(d) { return {text: d.word, size:d.size}; }))
+    .padding(10)
+    .fontSize(function(d) { return d.size; }) 
+    .on("end", draw);
+  layout.start();
+  
+  // This function takes the output of 'layout' above and draw the words
+  // Better not to touch it. To change parameters, play with the 'layout' variable above
+  function draw(words) {
+    svg
+      .append("g")
+        .attr("transform", "translate(" + layout.size()[0] / 2 + "," + layout.size()[1] / 2 + ")")
+        .selectAll("text")
+          .data(words)
+        .enter().append("text")
+          .style("font-size", function(d) { return d.size; })
+          .attr("text-anchor", "middle")
+          .attr("transform", function(d) {
+            return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
+          })
+          .text(function(d) { return d.text; });
+  }
+  </script>
 <!--graph end-->
 </body>
 </html>
